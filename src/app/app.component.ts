@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
 export  class AppComponent {
   //can have methods and properties
   pageHeader : string = "Employee Details";
+
+  imageSource = "http://pragimtech.com/images/logo.jpg"; 
 }

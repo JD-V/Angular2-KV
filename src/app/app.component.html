@@ -7,4 +7,9 @@
 <!-- property binding, here since we are binding disabled 
 property with boolean value we must use property binding, 
 interpolation will not behave as desired. -->
+<span bind-innerHtml='pageHeader'></span>   <!--property binding canonical form (bind-propery) = 'variableName' -->
+
+<div [innerHtml]= 'badHtml'></div>  <!-- example of sanitization of bad html using property binding -->
+
+<div>{{badHtml}}</div>  <!-- example of sanitization of bad html using interpolation-->
 </div>

@@ -13,4 +13,6 @@ export  class AppComponent {
   imageSource = "images/logo.jpg"; 
 
   isDisabled : boolean = true;
+
+  badHtml : string ="hello <script>alert('World')</script>world";  // example of sanitization of bad html
 }

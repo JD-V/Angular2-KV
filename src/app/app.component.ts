@@ -10,5 +10,7 @@ export  class AppComponent {
   //can have methods and properties
   pageHeader : string = "Employee Details";
 
-  imageSource = "http://pragimtech.com/images/logo.jpg"; 
+  imageSource = "images/logo.jpg"; 
+
+  isDisabled : boolean = true;
 }

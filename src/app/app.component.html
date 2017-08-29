@@ -1,5 +1,10 @@
 <div>
 <h1>{{pageHeader}}</h1>
-<img src="{{imageSource}}" />   <!-- one-way data binding using  {{}}  - component to view -->
+<img src="http://pragimtech.com/{{imageSource}}" />   
+<!-- one-way data binding using Interpolation {{}}  - component to view -->
 <my-employee></my-employee>
+<button class="button" [disabled] = 'isDisabled' > click me </button> 
+<!-- property binding, here since we are binding disabled 
+property with boolean value we must use property binding, 
+interpolation will not behave as desired. -->
 </div>

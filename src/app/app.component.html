@@ -2,4 +2,14 @@
 <h1>{{pageHeader}}</h1>
 <my-employee></my-employee>
 
+<button class="colorClass" [class] = 'classesToApply' >My Button </button>  <!-- [class] will replace any existing class -->
+<br/><br/>
+<button class="colorClass italicClass" [class.boldClass] = 'applyBoldClass' >My Button 1</button> <!-- [class.boldClass] will append the new class with existing classes -->
+<br/><br/>
+<button class="colorClass italicClass boldClass" [class] = '!applyBoldClass' >My Button 2</button> <!-- [class.boldClass] will append or remove the new class with existing classes -->
+
+<br/><br/>
+<button [ngClass]="addClasses()" >My Button 2</button> <!-- [class.boldClass] will append or remove the new class with existing classes -->
+
+
 </div>

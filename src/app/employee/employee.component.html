@@ -1,4 +1,12 @@
 <table>
+    <thead>
+        <tr>
+            <!--<th attr.colspan = "{{columnSpan}}">Employee Details</th>-->
+            <th [attr.colspan] = "columnSpan">Employee Details</th>
+            <!-- both interpolation style and property binding style can do the job
+                 but do remember to prefix attribute with 'attr.' in order to allow attribute binding-->
+        </tr>
+    </thead>
 <tr>
     <td>First name</td>
     <td>{{firstName}}</td>
